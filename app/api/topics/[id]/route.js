@@ -11,6 +11,7 @@ export async function PUT(request, { params }) {
   return NextResponse.json({ message: "Topic Updated" }, { status: 200 });
 }
 
+// Get Single Data
 export async function GET(request, { params }) {
   const { id } = params;
   await connectMongoDB();
